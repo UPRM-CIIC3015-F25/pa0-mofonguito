@@ -65,8 +65,8 @@ pygame.init()
 clock = pygame.time.Clock()
 
 # Main Window setup
-screen_width = 500  # Screen width (can be adjusted)
-screen_height = 500  # Screen height (can be adjusted)
+screen_width = 800  # Screen width (can be adjusted)
+screen_height = 800  # Screen height (can be adjusted)
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Pong')  # Set window title
 
@@ -77,8 +77,8 @@ bg_color = pygame.Color('grey12')
 ball = pygame.Rect(screen_width / 2 - 15, screen_height / 2 - 15, 30, 30)  # Ball (centered)
 # TODO Task 1 Make the paddle bigger
 player_height = 15
-player_width = 100
-player = pygame.Rect(screen_width/2 - 45, screen_height - 20, player_width, player_height)  # Player paddle
+player_width = 200
+player = pygame.Rect(screen_width/2 - 90, screen_height - 20, player_width, player_height)  # Player paddle
 
 # Game Variables
 ball_speed_x = 0
