@@ -25,6 +25,8 @@ def ball_movement():
             score += 1  # Increase player score
             ball_speed_y *= -1  # Reverse ball's vertical direction
             # TODO Task 6: Add sound effects HERE
+            pygame.mixer.Sound.play(pong_sound)
+
 
     # Ball collision with top boundary
     if ball.top <= 0:
@@ -88,6 +90,9 @@ player_speed = 0
 # Score Text setup
 score = 0
 basic_font = pygame.font.Font('freesansbold.ttf', 32)  # Font for displaying score
+
+# Sound setup
+pong_sound = pygame.mixer.Sound("car_crash.mp3")
 
 start = False  # Indicates if the game has started
 
